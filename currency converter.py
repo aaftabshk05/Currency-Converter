@@ -37,7 +37,6 @@ footer_frame.grid(row=3, column=0, columnspan=3, sticky="nsew")
 header_label = tk.Label(header_frame, font=('Segoe UI', 24, 'bold'), text='Currency Converter',
                         bg='#2c3e50', fg='white')
 header_label.pack(pady=5)
-
 # Currency variables
 variable1 = tk.StringVar(root)
 variable2 = tk.StringVar(root)
@@ -45,7 +44,7 @@ variable1.set("USD")
 variable2.set("INR")
 
 # List of currencies for the dropdown menu
-currency_list = ["USD", "INR", "EUR", "GBP", "CAD", "PKR", "AUD", "JPY", "CNY", "HKD", "IDR", "AED", "JOD", "KRW"]
+currency_list = ["USD", "INR", "EUR", "GBP", "CAD", "PKR","IRR", "AFN","AUD", "JPY", "RUB", "CNY", "HKD","BDT","LKR", "IDR", "AED", "JOD", "KRW"]
 
 # Function to fetch and display conversion result
 def RealTimeCurrencyConversion():
@@ -150,7 +149,7 @@ clear_button = tk.Button(input_frame, font=('Segoe UI', 14, 'bold'), text=" Clea
 clear_button.grid(row=6, column=0, columnspan=2, pady=10)
 
 # Footer Label
-footer_label = tk.Label(footer_frame, font=('Segoe UI', 10), text="Powered by ExchangeRate-API", bg="#2c3e50", fg="white")
+footer_label = tk.Label(footer_frame, font=('Segoe UI', 10), text="PDEA COEM", bg="#2c3e50", fg="white")
 footer_label.pack(pady=5)
 
 # Center the content in the root window
